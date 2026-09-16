@@ -4,8 +4,8 @@
 
 对应代码主要在：
 
-- `keras-mini-llm/attention.py` 中的 `AttentionWithRoPE`
-- `pytorch-mini-llm/attention.py` 中的 `AttentionWithRoPE`
+- `keras-llm/attention.py` 中的 `AttentionWithRoPE`
+- `pytorch-llm/attention.py` 中的 `AttentionWithRoPE`
 - 两个版本各自的 `rope.py`
 - 两个版本各自的 `transformblock.py`
 

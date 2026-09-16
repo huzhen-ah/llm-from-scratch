@@ -14,8 +14,8 @@ BBPE tokenizer
 
 | 实现 | 入口 |
 | --- | --- |
-| Keras / TensorFlow | `keras-mini-llm/demo.py` |
-| PyTorch | `pytorch-mini-llm/demo.py` |
+| Keras / TensorFlow | `keras-llm/demo.py` |
+| PyTorch | `pytorch-llm/demo.py` |
 
 Demo 不会调用其他训练脚本，而是在一个文件中直接组织各阶段所需的模型、数据管线、loss、评估器和权重工具。它用于展示完整链路，不替代各阶段的独立入口。
 
@@ -26,14 +26,14 @@ Demo 不会调用其他训练脚本，而是在一个文件中直接组织各阶
 Keras：
 
 ```bash
-cd keras-mini-llm
+cd keras-llm
 python demo.py
 ```
 
 PyTorch：
 
 ```bash
-cd pytorch-mini-llm
+cd pytorch-llm
 python demo.py
 ```
 

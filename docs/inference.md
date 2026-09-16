@@ -4,10 +4,10 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| 推理控制 | `keras-mini-llm/interface.py` | `pytorch-mini-llm/interface.py` |
-| Prefill / Decode | `keras-mini-llm/inference_models.py` | `pytorch-mini-llm/inference_models.py` |
-| 采样 | `keras-mini-llm/sample_utils.py` | `pytorch-mini-llm/sample_utils.py` |
-| Tokenizer | `keras-mini-llm/tokenizer.py` | `pytorch-mini-llm/tokenizer.py` |
+| 推理控制 | `keras-llm/interface.py` | `pytorch-llm/interface.py` |
+| Prefill / Decode | `keras-llm/inference_models.py` | `pytorch-llm/inference_models.py` |
+| 采样 | `keras-llm/sample_utils.py` | `pytorch-llm/sample_utils.py` |
+| Tokenizer | `keras-llm/tokenizer.py` | `pytorch-llm/tokenizer.py` |
 
 两套 `sample_utils.py` 和 `tokenizer.py` 当前逻辑一致。KVCache 内部细节另见 [KVCache 原理与实现](kvcache.md)。
 

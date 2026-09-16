@@ -1,6 +1,6 @@
-# PyTorch Mini LLM
+# PyTorch LLM
 
-这是一个用于学习和教学的 mini LLM PyTorch 实现，与 `keras-mini-llm/` 保持相同的核心计算链路。项目不依赖 Hugging Face Transformers，从 Byte-level BPE tokenizer 开始，逐步实现 decoder-only Transformer 预训练、LoRA-SFT、LoRA-DPO，以及带 KVCache 的 Prefill / Decode 推理。
+这是一个用于学习和教学的 LLM PyTorch 实现，与 `keras-llm/` 保持相同的核心计算链路。项目不依赖 Hugging Face Transformers，从 Byte-level BPE tokenizer 开始，逐步实现 decoder-only Transformer 预训练、LoRA-SFT、LoRA-DPO，以及带 KVCache 的 Prefill / Decode 推理。
 
 > 本项目的目标是展示完整链路和关键实现，不是训练可用于生产环境的通用大语言模型。
 
@@ -32,7 +32,7 @@
 
 Keras 与 PyTorch 共用的实现文档统一位于仓库根目录 `docs/`：
 
-- [Mini LLM 模型架构](../docs/model_architecture.md)
+- [LLM 模型架构](../docs/model_architecture.md)
 - [Multi-Head Self-Attention 原理与实现](../docs/attention.md)
 - [BBPE 原理与实现](../docs/bbpe.md)
 - [RoPE 原理与实现](../docs/rope.md)
@@ -49,20 +49,20 @@ Keras 与 PyTorch 共用的实现文档统一位于仓库根目录 `docs/`：
 进入 PyTorch 子项目后安装依赖：
 
 ```bash
-cd pytorch-mini-llm
+cd pytorch-llm
 python -m pip install torch numpy regex tqdm charset-normalizer
 ```
 
 如需 GPU 版本的 PyTorch，请根据本机 CUDA 环境安装匹配的 PyTorch wheel。
 
-所有脚本都使用相对路径，因此后续命令应在 `pytorch-mini-llm/` 目录内执行。
+所有脚本都使用相对路径，因此后续命令应在 `pytorch-llm/` 目录内执行。
 
 ## 快速开始
 
 仓库已附带 tokenizer 配置、预训练权重、SFT/DPO 合并权重和示例数据。无需重新训练即可运行 KVCache 推理：
 
 ```bash
-cd pytorch-mini-llm
+cd pytorch-llm
 python interface.py
 ```
 
@@ -308,7 +308,7 @@ tokenizer_config/     # vocabulary 与 merge rules
 
 ### 找不到数据、tokenizer 或 checkpoint
 
-先确认当前工作目录是 `pytorch-mini-llm/`，因为入口脚本使用相对路径。
+先确认当前工作目录是 `pytorch-llm/`，因为入口脚本使用相对路径。
 
 ### 加载权重时出现 size mismatch
 

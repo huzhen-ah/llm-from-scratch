@@ -6,8 +6,8 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| RoPE | `keras-mini-llm/rope.py` | `pytorch-mini-llm/rope.py` |
-| Attention 调用 | `keras-mini-llm/attention.py` | `pytorch-mini-llm/attention.py` |
+| RoPE | `keras-llm/rope.py` | `pytorch-llm/rope.py` |
+| Attention 调用 | `keras-llm/attention.py` | `pytorch-llm/attention.py` |
 
 本文会先介绍传统绝对位置编码 APE，再介绍 RoPE，最后说明两者在 attention 中的主要区别，以及本项目 `rope_exp()` 的实现方式。
 

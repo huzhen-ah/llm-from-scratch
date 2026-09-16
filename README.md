@@ -1,6 +1,6 @@
-# Mini LLM Demo
+# LLM From Scratch
 
-这是一个面向学习与教学的 mini LLM 项目，分别使用 Keras / TensorFlow 和 PyTorch 实现同一条训练与推理链路，用于对照两个框架中的模型结构、训练流程、权重管理和 KVCache 实现。
+这是一个面向学习与教学的 LLM 项目，分别使用 Keras / TensorFlow 和 PyTorch 实现同一条训练与推理链路，用于对照两个框架中的模型结构、训练流程、权重管理和 KVCache 实现。
 
 ## 项目链路
 
@@ -18,8 +18,8 @@ BBPE tokenizer
 
 | 版本 | 当前状态 |
 | --- | --- |
-| [Keras / TensorFlow](keras-mini-llm/) | 已完成预训练、LoRA-SFT、LoRA-DPO、Prefill / Decode、KVCache 推理和端到端 demo |
-| [PyTorch](pytorch-mini-llm/) | 已完成预训练、LoRA-SFT、LoRA-DPO、Prefill / Decode、KVCache 推理和端到端 demo |
+| [Keras / TensorFlow](keras-llm/) | 已完成预训练、LoRA-SFT、LoRA-DPO、Prefill / Decode、KVCache 推理和端到端 demo |
+| [PyTorch](pytorch-llm/) | 已完成预训练、LoRA-SFT、LoRA-DPO、Prefill / Decode、KVCache 推理和端到端 demo |
 
 当前 Keras / TensorFlow 与 PyTorch 两个版本的核心训练和推理链路均已跑通。两套版本的运行说明已分别整理在各自 README 中，共用原理与实现差异统一记录在根目录 `docs/`。
 
@@ -27,8 +27,8 @@ BBPE tokenizer
 
 ```text
 .
-├── keras-mini-llm/       # Keras / TensorFlow 完整版本
-├── pytorch-mini-llm/     # PyTorch 对照实现
+├── keras-llm/       # Keras / TensorFlow 完整版本
+├── pytorch-llm/     # PyTorch 对照实现
 ├── docs/                 # 两套框架共用的原理与实现文档
 └── README.md
 ```
@@ -39,7 +39,7 @@ BBPE tokenizer
 
 ## 通用实现文档
 
-- [Mini LLM 模型架构](docs/model_architecture.md)
+- [LLM 模型架构](docs/model_architecture.md)
 - [Multi-Head Self-Attention 原理与实现](docs/attention.md)
 - [BBPE 原理与实现](docs/bbpe.md)
 - [RoPE 原理与实现](docs/rope.md)

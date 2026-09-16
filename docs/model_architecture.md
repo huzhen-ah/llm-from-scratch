@@ -1,4 +1,4 @@
-# Mini LLM 模型架构
+# LLM 模型架构
 
 本文说明项目中 Keras / TensorFlow 与 PyTorch 两个版本共用的模型架构。两套实现使用相同的数据流和核心计算，只在框架 API、参数命名及模型组织方式上有所区别。
 
@@ -6,11 +6,11 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| 模型组装 | `keras-mini-llm/models.py` | `pytorch-mini-llm/models.py` |
-| Transformer Block | `keras-mini-llm/transformblock.py` | `pytorch-mini-llm/transformblock.py` |
-| Attention | `keras-mini-llm/attention.py` | `pytorch-mini-llm/attention.py` |
-| RMSNorm、SwiGLU | `keras-mini-llm/layers.py` | `pytorch-mini-llm/layers.py` |
-| RoPE | `keras-mini-llm/rope.py` | `pytorch-mini-llm/rope.py` |
+| 模型组装 | `keras-llm/models.py` | `pytorch-llm/models.py` |
+| Transformer Block | `keras-llm/transformblock.py` | `pytorch-llm/transformblock.py` |
+| Attention | `keras-llm/attention.py` | `pytorch-llm/attention.py` |
+| RMSNorm、SwiGLU | `keras-llm/layers.py` | `pytorch-llm/layers.py` |
+| RoPE | `keras-llm/rope.py` | `pytorch-llm/rope.py` |
 
 本文聚焦训练模型 `create_pretrain_model()`。Prefill、Decode 和 KVCache 属于推理阶段的结构变化，另见现有 KVCache 文档。
 

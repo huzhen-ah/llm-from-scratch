@@ -4,10 +4,10 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| 推理模型 | `keras-mini-llm/inference_models.py` | `pytorch-mini-llm/inference_models.py` |
-| KVCache Attention | `keras-mini-llm/attention.py` | `pytorch-mini-llm/attention.py` |
-| Transformer Block | `keras-mini-llm/transformblock.py` | `pytorch-mini-llm/transformblock.py` |
-| 批量生成控制 | `keras-mini-llm/interface.py` | `pytorch-mini-llm/interface.py` |
+| 推理模型 | `keras-llm/inference_models.py` | `pytorch-llm/inference_models.py` |
+| KVCache Attention | `keras-llm/attention.py` | `pytorch-llm/attention.py` |
+| Transformer Block | `keras-llm/transformblock.py` | `pytorch-llm/transformblock.py` |
+| 批量生成控制 | `keras-llm/interface.py` | `pytorch-llm/interface.py` |
 
 本文只讨论本项目里的基础 KVCache：prefill 一次性生成 prompt 的初始 k/v cache，decode 阶段每次更新一个新 token 的 k/v。
 

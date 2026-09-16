@@ -1,6 +1,6 @@
-# Keras Mini LLM
+# Keras LLM
 
-这是一个基于 Keras / TensorFlow 实现的 mini LLM demo，覆盖从 tokenizer、decoder-only Transformer 预训练、LoRA-SFT、LoRA-DPO，到 prefill / decode KVCache 推理的完整主链路。
+这是一个基于 Keras / TensorFlow 实现的 LLM demo，覆盖从 tokenizer、decoder-only Transformer 预训练、LoRA-SFT、LoRA-DPO，到 prefill / decode KVCache 推理的完整主链路。
 
 项目当前使用金庸武侠作品文本作为预训练语料，并配套提供武侠领域的 SFT / DPO 数据。数据仅用于本地学习和 demo 验证。
 
@@ -477,7 +477,7 @@ DPO_data/dpo_data.jsonl
 
 ## 说明
 
-这个项目聚焦 mini LLM 的关键工程链路：
+这个项目聚焦 LLM 的关键工程链路：
 
 ```text
 BBPE tokenizer

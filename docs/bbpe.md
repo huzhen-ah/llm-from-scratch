@@ -6,8 +6,8 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| BBPE 训练 | `keras-mini-llm/bbpe_trainer.py` | `pytorch-mini-llm/bbpe_trainer.py` |
-| 编码与解码 | `keras-mini-llm/tokenizer.py` | `pytorch-mini-llm/tokenizer.py` |
+| BBPE 训练 | `keras-llm/bbpe_trainer.py` | `pytorch-llm/bbpe_trainer.py` |
+| 编码与解码 | `keras-llm/tokenizer.py` | `pytorch-llm/tokenizer.py` |
 
 当前两套实现的上述文件逻辑一致。它们各自在子项目的 `tokenizer_config/` 中读取或保存词表与合并规则，以便两个子项目可以独立运行。
 

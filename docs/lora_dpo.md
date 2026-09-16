@@ -4,11 +4,11 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| 训练入口 | `keras-mini-llm/lora_dpo.py` | `pytorch-mini-llm/lora_dpo.py` |
-| 数据与 ref logp | `keras-mini-llm/train_utils.py` | `pytorch-mini-llm/train_utils.py` |
-| DPO loss | `keras-mini-llm/losses.py` | `pytorch-mini-llm/losses.py` |
-| LoRA 管理 | `keras-mini-llm/lora_utils.py` | `pytorch-mini-llm/lora_utils.py` |
-| 评估与保存 | `keras-mini-llm/callbacks.py` | `pytorch-mini-llm/callbacks.py` |
+| 训练入口 | `keras-llm/lora_dpo.py` | `pytorch-llm/lora_dpo.py` |
+| 数据与 ref logp | `keras-llm/train_utils.py` | `pytorch-llm/train_utils.py` |
+| DPO loss | `keras-llm/losses.py` | `pytorch-llm/losses.py` |
+| LoRA 管理 | `keras-llm/lora_utils.py` | `pytorch-llm/lora_utils.py` |
+| 评估与保存 | `keras-llm/callbacks.py` | `pytorch-llm/callbacks.py` |
 
 本文只讨论本项目里的基础 DPO：在已经完成 SFT 的模型上继续训练 LoRA，使模型更偏向 chosen answer，远离 rejected answer。
 

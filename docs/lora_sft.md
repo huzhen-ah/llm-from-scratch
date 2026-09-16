@@ -4,12 +4,12 @@
 
 | 模块 | Keras / TensorFlow | PyTorch |
 | --- | --- | --- |
-| 训练入口 | `keras-mini-llm/lora_sft.py` | `pytorch-mini-llm/lora_sft.py` |
-| 数据管线 | `keras-mini-llm/train_utils.py` | `pytorch-mini-llm/train_utils.py` |
-| Loss / Accuracy | `keras-mini-llm/losses.py`、`metrics.py` | `pytorch-mini-llm/losses.py`、`metrics.py` |
-| LoRA 管理 | `keras-mini-llm/lora_utils.py` | `pytorch-mini-llm/lora_utils.py` |
-| LoRA 层 | `keras-mini-llm/attention.py`、`layers.py` | `pytorch-mini-llm/attention.py`、`layers.py` |
-| 评估与保存 | `keras-mini-llm/callbacks.py` | `pytorch-mini-llm/callbacks.py` |
+| 训练入口 | `keras-llm/lora_sft.py` | `pytorch-llm/lora_sft.py` |
+| 数据管线 | `keras-llm/train_utils.py` | `pytorch-llm/train_utils.py` |
+| Loss / Accuracy | `keras-llm/losses.py`、`metrics.py` | `pytorch-llm/losses.py`、`metrics.py` |
+| LoRA 管理 | `keras-llm/lora_utils.py` | `pytorch-llm/lora_utils.py` |
+| LoRA 层 | `keras-llm/attention.py`、`layers.py` | `pytorch-llm/attention.py`、`layers.py` |
+| 评估与保存 | `keras-llm/callbacks.py` | `pytorch-llm/callbacks.py` |
 
 本文只讨论本项目里的基础 LoRA-SFT：在预训练模型基础上加载 base 权重，冻结非 LoRA 参数，只训练 LoRA 参数，并使用 answer-only loss mask 做 instruction tuning。
 
